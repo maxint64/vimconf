@@ -55,6 +55,7 @@ hi VertSplit 	guifg=#202020 guibg=#202020 gui=none
 hi Pmenu ctermfg=Green ctermbg=Black
 hi PmenuSel ctermfg=White ctermbg=LightBlue
 
+hi ColorColumn ctermbg=lightgrey guibg=lightgrey
 set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
 set guifont=Monospace\ 12
@@ -73,6 +74,8 @@ set cursorline
 filetype indent on
 set autoindent
 set fileencodings=utf-8
+set cc=120
+
 
 let g:neocomplcache_enable_at_startup=1
 
