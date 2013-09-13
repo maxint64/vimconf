@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='scp://root@test94.sohu.com//opt/services/server_antispam/'
+let g:netrw_dirhist_2='/home/maxint64/workspace/sohu/antispam'
+let g:netrw_dirhist_3='/home/maxint64/.pip'
+let g:netrw_dirhist_4='/home/maxint64/workspace/sohu/antispam/clients/lib/reference'
+let g:netrw_dirhist_5='/home/maxint64/workspace/sohu/antispam/train'
+let g:netrw_dirhist_6='/home/maxint64/workspace/sohu/antispam/clients/lib'

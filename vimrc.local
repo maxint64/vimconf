@@ -1,1 +1,23 @@
-/etc/vim/vimrc.local
+" neocomplcache : Ultimate auto completion system for Vim
+let g:neocomplcache_enable_at_startup=1
+
+imap jj <ESC>
+map <C-j> :tabp<CR>
+map <C-k> :tabn<CR>
+
+"set expandtab
+
+"let g:indentLine_char='│'
+let g:indentLine_char='|'
+
+
+" Enable using pathogen to manager vim plugins easily
+execute pathogen#infect()
+
+" Uncomment the following to use pylint in vim
+"autocmd FileType python compiler pylint
+
+" run gvim in maximize window
+if has("gui_running")
+	set lines=40 columns=150
+endif
