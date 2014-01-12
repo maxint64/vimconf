@@ -4,8 +4,9 @@ let g:neocomplcache_enable_at_startup=1
 imap jj <ESC>
 map <C-j> :tabp<CR>
 map <C-k> :tabn<CR>
+map :qq :qa
 
-"set expandtab
+set expandtab
 
 "let g:indentLine_char='│'
 let g:indentLine_char='|'
@@ -21,3 +22,23 @@ execute pathogen#infect()
 if has("gui_running")
 	set lines=40 columns=150
 endif
+
+" Auto-complete
+inoremap ( ()<ESC>i
+inoremap ) <c-r>=ClosePair(')')<CR>
+inoremap { {}<ESC>i
+inoremap } <c-r>=ClosePair('}')<CR>
+inoremap [ []<ESC>i
+inoremap ] <c-r>=ClosePair(']')<CR>
+inoremap < <><ESC>i
+inoremap > <c-r>=ClosePair('>')<CR>
+
+function ClosePair(char)
+	if getline('.')[col('.') - 1] == a:char
+		return "\<Right>"
+	else
+	    return a:char
+	endif
+endf
+
+au VimEnter * NERDTree
