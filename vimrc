@@ -41,6 +41,7 @@ endif
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
 set background=dark
+"set background=light
 
 " general colors
 hi Normal         guifg=#F8F8F8    guibg=#141414
@@ -79,6 +80,8 @@ set cursorline
 filetype indent on
 set autoindent
 set fileencodings=utf-8
+set ttyfast
+set lazyredraw
 set cc=95
 
 " Source a global configuration file if available
