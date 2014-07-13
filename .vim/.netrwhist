@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/maxint64/workspace/sohu/m3_php/plugins/bayes'
-let g:netrw_dirhist_2='/home/maxint64/workspace/sohu/m3_python/.git'
-let g:netrw_dirhist_3='/home/maxint64/workspace/sohu/m3_python/app'
-let g:netrw_dirhist_4='/home/maxint64/.vim/bundle/goyo.vim'
