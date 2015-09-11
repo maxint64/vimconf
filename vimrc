@@ -41,7 +41,7 @@ endif
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
 set background=dark
-"set background=light
+" set background=light
 
 " general colors
 hi Normal         guifg=#F8F8F8    guibg=#141414
@@ -53,14 +53,11 @@ hi StatusLine 	guifg=#F8F8F8 guibg=#202020 gui=bold
 hi StatusLineNC guifg=#777777 guibg=#202020 gui=none
 hi VertSplit 	guifg=#202020 guibg=#202020 gui=none
 
-hi TabLineFill ctermbg=lightgray ctermfg=lightgray
-hi TabLine cterm=reverse
-hi TabLineSel cterm=bold ctermfg=white
-
 hi Pmenu ctermfg=Green ctermbg=Black
 hi PmenuSel ctermfg=White ctermbg=LightBlue
 
 hi ColorColumn ctermbg=lightgrey guibg=lightgrey
+hi SpecialKey guifg=black ctermfg=239
 
 set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
@@ -74,7 +71,8 @@ set autowrite		" Automatically save before commands like :next and :make
 set nu
 set tabstop=4
 set shiftwidth=4
-set list lcs=tab:\|\ 
+"set list lcs=tab:\|\ 
+set list lcs=tab:\│\ 
 set smarttab
 set cursorline 
 filetype indent on
@@ -82,7 +80,7 @@ set autoindent
 set fileencodings=utf-8
 set ttyfast
 set lazyredraw
-set cc=95
+set cc=86
 
 " Source a global configuration file if available
 if filereadable("/etc/vim/vimrc.local")

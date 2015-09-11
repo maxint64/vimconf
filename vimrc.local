@@ -8,20 +8,15 @@ map :qq :qa
 
 set expandtab
 
-let g:indentLine_char='│'
-"let g:indentLine_char='|'
-
-
 " Enable using pathogen to manager vim plugins easily
 execute pathogen#infect()
 
+let g:indentLine_char='│'
+"let g:indentLine_char='|'
+
+"
 " Uncomment the following to use pylint in vim
 "autocmd FileType python compiler pylint
-
-" run gvim in maximize window
-if has("gui_running")
-	set lines=40 columns=150
-endif
 
 " Auto-complete
 inoremap ( ()<ESC>i
@@ -41,4 +36,8 @@ endf
 
 au VimEnter * if !&diff | NERDTree
 au BufReadPost *.html set syntax=php
-au BufReadPost ~/workspace/sohu/m3_php/* set noexpandtab 
+
+" For airline
+set guifont=Liberation\ Mono\ for\ Powerline\ 10
+let g:airline_powerline_fonts = 1
+set t_Co=16
